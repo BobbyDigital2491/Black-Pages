@@ -33,7 +33,7 @@ const Navbar = () => {
     >
       <div className='max-w-[1240px] m-auto flex justify-between items-center p-4 text-white'>
         <Link href='/'>
-          <Image src="/VCP.png" width={110} height={120} alt='Logo'/>
+          <Image src="/1.png" width={110} height={120} alt='Logo'/>
         </Link>
         <ul style={{ color: `${textColor}` }} className='hidden sm:flex'>
           <li className='p-4'>
