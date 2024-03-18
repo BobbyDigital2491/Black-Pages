@@ -82,7 +82,7 @@ const Categories = () => {
           <div
             className="rounded-3xl bg-white bg-opacity-95 px-4 py-3 text-sm font-semibold uppercase tracking-wide transition ease-out group-hover:bg-blue-600 group-hover:text-white dark:border-gray-800 dark:bg-gray-900/90"
           >
-            Smart Home
+            Interior Decoration
           </div>
         </div>
       </a>
@@ -91,7 +91,7 @@ const Categories = () => {
         className="group relative block overflow-hidden transition ease-out active:opacity-75"
       >
         <img
-          src="https://cdn.tailkit.com/media/placeholders/photo-164_6wVEHfI-700x700.jpg"
+          src="https://www.toptierlandscapingkc.com/wp-content/uploads/2022/01/luxury-residential-property-front-yard-with-landscape-design-installed-with-hardscaping-overland-park-ks.jpg"
           alt="Product Image"
           className="transform transition ease-out group-hover:scale-110"
         />
@@ -102,7 +102,7 @@ const Categories = () => {
           <div
             className="rounded-3xl bg-white bg-opacity-95 px-4 py-3 text-sm font-semibold uppercase tracking-wide transition ease-out group-hover:bg-blue-600 group-hover:text-white dark:border-gray-800 dark:bg-gray-900/90"
           >
-            Shoes
+            Landscaping
           </div>
         </div>
       </a>
@@ -111,7 +111,7 @@ const Categories = () => {
         className="group relative block overflow-hidden transition ease-out active:opacity-75"
       >
         <img
-          src="https://cdn.tailkit.com/media/placeholders/photo-wW7XbWYoqK8-700x700.jpg"
+          src="https://static1.squarespace.com/static/58a391102994ca6810f076c2/58a4f41e86e6c02004ff42cf/5e0a9631a5b0832cb7668812/1579034728979/20191225_162243-01.jpg?format=1500w"
           alt="Product Image"
           className="transform transition ease-out group-hover:scale-110"
         />
@@ -122,7 +122,7 @@ const Categories = () => {
           <div
             className="rounded-3xl bg-white bg-opacity-95 px-4 py-3 text-sm font-semibold uppercase tracking-wide transition ease-out group-hover:bg-blue-600 group-hover:text-white dark:border-gray-800 dark:bg-gray-900/90"
           >
-            Wearables
+            Security
           </div>
         </div>
       </a>
