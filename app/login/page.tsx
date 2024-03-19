@@ -67,9 +67,9 @@ export default function Login({
       className="flex items-center justify-center px-8 py-8 sm:px-12 lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6"
     >
       <div className="max-w-xl lg:max-w-3xl">
-        <a className="block text-blue-600" href="#">
+        <a className="block text-green-600" href="/">
           <span className="sr-only">Home</span>
-          <img src="https://viccci.xyz/log.png" width={40} alt=""/>
+          <img src="/1.png" width={150} alt=""/>
         </a>
 
         <h1 className="mt-6 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
@@ -102,7 +102,7 @@ export default function Login({
         />
         <SubmitButton
           formAction={signIn}
-          className="bg-green-700 rounded-md px-4 py-2 text-foreground mb-2"
+          className="bg-green-600 hover:bg-green-400 rounded-md px-4 py-2 text-foreground mb-2"
           pendingText="Signing In..."
         >
           Sign In

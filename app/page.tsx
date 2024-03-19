@@ -10,6 +10,7 @@ import Navbar from "@/components/Navbar";
 import CTA from "@/components/CTA";
 import Trial from "@/components/Trial";
 import CTA2 from "@/components/CTA2";
+import Parnterships from "@/components/Parnterships";
 
 export default async function Index() {
   const canInitSupabaseClient = () => {
@@ -37,6 +38,7 @@ export default async function Index() {
       <div>
         <br/>
         <Hero/>
+        <Parnterships/>
         <br/>
         <CTA/>
         <CTA2/>
