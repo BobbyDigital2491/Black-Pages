@@ -11,8 +11,8 @@ const AuthHero = () => {
         
         <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
             <div className="max-w-lg mx-auto text-center xl:max-w-2xl">
-                <h1 className="text-3xl font-bold text-white sm:text-4xl xl:text-5xl">You&apos;s a lil bitch. Hoe ass nigga</h1>
-                <p className="max-w-lg mx-auto mt-6 text-base font-normal leading-7 text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nunc nisl eu consectetur. Mi massa elementum odio eu viverra amet.</p>
+                <h1 className="text-3xl font-bold text-white sm:text-4xl xl:text-5xl">Welcome to the <span className='bg-yellow-400 text-black'>Black</span> <span className='text-green-400'>Pages</span></h1>
+                <p className="max-w-lg mx-auto mt-6 text-base font-normal leading-7 text-gray-300">Find any type of black owned business in your area.</p>
 
                 <form action="#" className="max-w-xl mx-auto mt-10">
                     <div>
@@ -24,7 +24,7 @@ const AuthHero = () => {
                                 </svg>
                             </div>
 
-                            <input type="text" name="" id="" placeholder="Restaurant, Event Planner, Tax etc..." className="block w-full py-3 pl-10 pr-4 text-base font-normal leading-7 text-gray-900 placeholder-gray-500 bg-white border border-white focus:ring-white focus:border-white focus:ring-offset-2" />
+                            <input type="text" name="" id="" placeholder="Catering, Event Planner, Tax, Software Development etc..." className="block w-full py-3 pl-10 pr-4 text-base font-normal leading-7 text-gray-900 placeholder-gray-500 bg-white border border-white focus:ring-white focus:border-white focus:ring-offset-2" />
                         </div>
                     </div>
 
@@ -64,7 +64,7 @@ const AuthHero = () => {
 
                     <div>
                         <p className="text-4xl font-bold text-white">14,344</p>
-                        <p className="mt-2 text-sm font-medium text-gray-300">Registered Customers</p>
+                        <p className="mt-2 text-sm font-medium text-gray-300">Registered Businesses</p>
                     </div>
                 </div>
             </div>

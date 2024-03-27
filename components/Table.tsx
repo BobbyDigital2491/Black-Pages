@@ -39,7 +39,7 @@ export default async function Page() {
               </div>
               <div className="ml-4">
                 <h2 className="text-lg font-semibold text-white">{entry.business_name}</h2>
-                <p className="text-gray-600">{entry.name_of_owner}</p>
+                
                 <p className="text-gray-600">{entry.business_industry}</p>
                 <br />
                 <p className="text-white">{entry.Description}</p>
