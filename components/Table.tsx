@@ -9,13 +9,14 @@ interface DirectoryEntry {
   name_of_owner: string;
   business_industry: string;
   image: string;
+  Description: string; // Assuming Description field exists in your table
 }
 
 export default async function Page() {
   const cookieStore = cookies()
   const supabase = createClient(cookieStore)
 
-  const { data: directoryData, error } = await supabase.from('directory').select('*')
+  const { data: directoryData, error } = await supabase.from<DirectoryEntry>('directory').select('*')
 
   if (error) {
     console.error('Error fetching directory data:', error.message)
