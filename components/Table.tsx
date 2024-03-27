@@ -16,7 +16,7 @@ export default async function Page() {
   const cookieStore = cookies()
   const supabase = createClient(cookieStore)
 
-  const { data: directoryData, error } = await supabase.from<DirectoryEntry>('directory').select('*')
+  const { data: directoryData, error } = await supabase.from('directory').select()
 
   if (error) {
     console.error('Error fetching directory data:', error.message)
