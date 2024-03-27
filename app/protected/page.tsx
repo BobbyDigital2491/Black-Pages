@@ -1,14 +1,13 @@
 
 import AuthButton from "../../components/AuthButton";
 import { createClient } from "../../utils/supabase/server";
-
-
 import { redirect } from "next/navigation";
 import SupabaseLogo from "../../components/SupabaseLogo";
 import Hero from "../../components/Hero";
 import Categories from "../../components/Categories";
 import Navbar from "@/components/Navbar";
 import AuthHero from "@/components/AuthHero";
+import Table from "@/components/Table";
 
 export default async function ProtectedPage() {
   const supabase = createClient();
@@ -34,6 +33,7 @@ export default async function ProtectedPage() {
         <br/>
         <AuthHero/>
         <Categories/>
+        <Table />
       </div>
       </div>
     </div>

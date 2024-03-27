@@ -1,29 +1,46 @@
-import { createClient } from '@/utils/supabase/server';
-import { GetServerSideProps } from 'next';
+/* eslint-disable @next/next/no-img-element */
+import { createClient } from '@/utils/supabase/server'
+import { cookies } from 'next/headers'
 
-export default async function Directory() {
-  const supabase = createClient();
-  const { data: directory } = await supabase.from("Directory").select('*');
 
-  return <pre className='text-white'>{JSON.stringify(directory, null, 2)}</pre>
+interface DirectoryEntry {
+  id: number;
+  business_name: string;
+  name_of_owner: string;
+  business_industry: string;
+  image: string;
 }
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
-  const supabase = createClient();
-  const { data, error } = await supabase.from('Directory').select('*');
+export default async function Page() {
+  const cookieStore = cookies()
+  const supabase = createClient(cookieStore)
+
+  const { data: directoryData, error } = await supabase.from('directory').select('*')
 
   if (error) {
-    console.error('Error fetching Directory:', error.message);
-    return {
-      props: {
-        notes: [],
-      },
-    };
+    console.error('Error fetching directory data:', error.message)
+    return <div>Error fetching data</div>
   }
 
-  return {
-    props: {
-      notes: data || [],
-    },
-  };
-};
+  return (
+    <div className="grid grid-cols-3 gap-4">
+      {directoryData.map((entry) => (
+        <div key={entry.id} className="p-4 border border-gray-200 rounded-lg">
+          <div className="flex items-center mb-2">
+            <div className="w-16 h-16 rounded-full overflow-hidden">
+              <img src={entry.image} alt={entry.business_name} width={64} height={64} />
+            </div>
+            <div className="ml-4">
+              <h2 className="text-lg font-semibold text-white">{entry.business_name}</h2>
+              <p className="text-gray-600">{entry.name_of_owner}</p>
+              <p className="text-gray-600">{entry.business_industry}</p>
+              <br/>
+              <p className="text-white">{entry.Description}</p>
+            </div>
+          </div>
+          {/* Add additional details here if needed */}
+        </div>
+      ))}
+    </div>
+  )
+}

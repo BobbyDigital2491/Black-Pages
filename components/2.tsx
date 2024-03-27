@@ -1,25 +1,61 @@
-import React from 'react'
+import { createClient } from '@/utils/supabase/server';
+import { GetServerSideProps } from 'next';
 
-const Two = () => {
+export default function Directory({ directory }: { directory: any[] }) {
   return (
-    <section className="bg-white dark:bg-black">
-    <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-        <div className="max-w-screen-md">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Let&nbsp;s find more that brings us together.</h2>
-            <p className="mb-8 font-light text-gray-500 sm:text-xl dark:text-gray-400">Flowbite helps you connect with friends, family and communities of people who share your interests. Connecting with your friends and family as well as discovering new ones is easy with features like Groups, Watch and Marketplace.</p>
-            <div className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
-                <a href="#" className="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-white rounded-lg hover:bg-primary-800 focus:ring-4 focus:ring-white-300 dark:focus:ring-white">
-                    Get started
-                </a>
-                <a href="#" className="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-gray-900 border bg-green-600 border-gray-300 rounded-lg hover:bg-green-400 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-600 dark:hover:bg-green-400 dark:focus:ring-gray-600">
-                    <svg className="mr-2 -ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
-                    View more
-                </a>  
-            </div>
-        </div>
+    <div className="overflow-x-auto shadow-md sm:rounded-lg">
+      <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+          <tr>
+            <th scope="col" className="p-4">
+              <div className="flex items-center">
+                <input id="checkbox-all-search" type="checkbox" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+                <label htmlFor="checkbox-all-search" className="sr-only">checkbox</label>
+              </div>
+            </th>
+            <th scope="col" className="px-6 py-3">
+              Business name
+            </th>
+            {/* Add more table headers as needed */}
+          </tr>
+        </thead>
+        <tbody>
+          {directory.map((item: any, index: number) => (
+            <tr key={index} className={`${index % 2 === 0 ? 'bg-white' : 'bg-gray-100'} border-b dark:bg-white dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600`}>
+              <td className="w-4 p-4">
+                <div className="flex items-center">
+                  <input id={`checkbox-table-search-${index}`} type="checkbox" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+                  <label htmlFor={`checkbox-table-search-${index}`} className="sr-only">checkbox</label>
+                </div>
+              </td>
+              <td className="px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
+                {item.business_name}
+              </td>
+              {/* Add more table data cells as needed */}
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
-</section>
-  )
+  );
 }
 
-export default Two
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const supabase = createClient();
+  const { data, error } = await supabase.from('Directory').select('*');
+
+  if (error) {
+    console.error('Error fetching Directory:', error.message);
+    return {
+      props: {
+        directory: [],
+      },
+    };
+  }
+
+  return {
+    props: {
+      directory: data || [],
+    },
+  };
+};

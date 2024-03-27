@@ -45,7 +45,6 @@ export default async function Index() {
         <CTA2/>
         <Categories/>
         <br/>
-        <Table/>
         <Trial/>
 
       </div>
