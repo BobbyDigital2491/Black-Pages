@@ -8,6 +8,7 @@ import Categories from "../../components/Categories";
 import Navbar from "@/components/Navbar";
 import AuthHero from "@/components/AuthHero";
 import Table from "@/components/Table";
+import TableHeading from "@/components/TableHeading";
 
 export default async function ProtectedPage() {
   const supabase = createClient();
@@ -33,6 +34,7 @@ export default async function ProtectedPage() {
         <br/>
         <AuthHero/>
         <Categories/>
+        <TableHeading/>
         <Table />
       </div>
       </div>

@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
             <div className="max-w-3xl mx-auto text-center">
                 <p className="inline-flex px-4 py-2 text-base text-green-400 border- bg-gray-200 border-green-400 rounded-full font-pj">Made by Developers, for Companies</p>
-                <h1 className="mt-5 text-4xl font-bold leading-tight text-white sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj">The <span className='text-green-400'>Black</span> <span className='text-yellow-300'>Pages</span>: Black Owned Business Directory</h1>
+                <h1 className="mt-5 md:text-5xl lg:text-6xl text-xl font-bold leading-tight text-white sm:text-5xl sm:leading-tight lg:leading-tight font-pj">The <span className='text-green-400 '>Black</span> <span className='text-yellow-300'>Pages</span>: Black Owned Business Directory</h1>
                 <p className="max-w-md mx-auto mt-6 text-base leading-7 text-white font-inter">Find the best black owned businesses in your area.</p>
 
                 <div className="relative inline-flex mt-10 group">

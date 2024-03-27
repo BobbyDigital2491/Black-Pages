@@ -12,6 +12,7 @@ const defaultUrl = process.env.VERCEL_URL
 export const metadata: Metadata = {
   title: "The Black Pages: Black Owned Business Directory",
   description: "Black Owned Business Directory",
+  
 };
 
 export default function RootLayout({

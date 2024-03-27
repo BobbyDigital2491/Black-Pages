@@ -28,14 +28,17 @@ export default async function Page() {
       return <div>Error fetching data</div>;
     }
 
+    // Sort directoryData alphabetically by business_name
+    directoryData.sort((a, b) => a.business_name.localeCompare(b.business_name));
+
     // Render fetched data
     return (
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {directoryData.map((entry) => (
           <div key={entry.id} className="p-4 border border-gray-200 rounded-lg">
             <div className="flex items-center mb-2">
-              <div className="w-16 h-16 rounded-full overflow-hidden">
-                <img src={entry.image} alt={entry.business_name} width={64} height={64} />
+              <div className="overflow-hidden">
+                <img src={entry.image} alt={entry.business_name} width={100} height={100} />
               </div>
               <div className="ml-4">
                 <h2 className="text-lg font-semibold text-white">{entry.business_name}</h2>
@@ -43,6 +46,9 @@ export default async function Page() {
                 <p className="text-gray-600">{entry.business_industry}</p>
                 <br />
                 <p className="text-white">{entry.Description}</p>
+                <br/>
+                <p className='text-white'>Founder / Co-Founders</p>
+                <p className='text-white'>{entry.name_of_owner}</p>
                 <br/>
                 <a href={entry.website} className='text-white'><button className='bg-green-400 rounded-md py-2 px-4'> Website</button></a>
               </div>
