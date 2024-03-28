@@ -37,7 +37,7 @@ const Navbar2 = () => {
         </Link>
         <ul style={{ color: `${textColor}` }} className='hidden sm:flex'>
           <li className='p-4'>
-            <Link href='/'>Home</Link>
+            <Link href='/protected'>Home</Link>
           </li>
           <li className='p-4'>
             <Link href='/about'>About Us</Link>
@@ -80,7 +80,7 @@ const Navbar2 = () => {
               <Link href='/about'>About Us</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-              <Link href='/team'>Our Team</Link>
+              <Link href='/deals'>Deals</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
               <Link href='/services'>Services</Link>
