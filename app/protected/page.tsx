@@ -38,7 +38,7 @@ export default async function ProtectedPage() {
         <AuthHero/>
         <br/><br/><br/><br/>
         <TableHeading/>
-        <Table />
+        <List />
         <Footer/>
       </div>
       </div>
