@@ -12,6 +12,8 @@ import Trial from "@/components/Trial";
 import CTA2 from "@/components/CTA2";
 import Parnterships from "@/components/Parnterships";
 import Table from "@/components/Table";
+import Blog from "@/components/Blog";
+import Footer from "@/components/Footer";
 
 export default async function Index() {
   const canInitSupabaseClient = () => {
@@ -45,8 +47,9 @@ export default async function Index() {
         <CTA2/>
         <Categories/>
         <br/>
+        <Blog/>
         <Trial/>
-
+        <Footer/>
       </div>
       </div>
     </div>

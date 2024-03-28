@@ -12,9 +12,6 @@ const defaultUrl = process.env.VERCEL_URL
 export const metadata: Metadata = {
   title: "The Black Pages: Black Owned Business Directory",
   description: "Black Owned Business Directory",
-  openGraph: {
-    images: '/1.png',
-  },
 };
 
 export default function RootLayout({
@@ -24,6 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link rel="icon" href="/favicon.ico" sizes="any" />
+      <meta property="og:image" content="<generated>" />
+      <meta property="og:image:type" content="<generated>" />
+      <meta property="og:image:width" content="<generated>" />
+      <meta property="og:image:height" content="<generated>" />
       <body className={inter.className}>{children}</body>
     </html>
   );

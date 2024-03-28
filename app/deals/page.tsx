@@ -10,10 +10,9 @@ import AuthHero from "@/components/AuthHero";
 import Table from "@/components/Table";
 import TableHeading from "@/components/TableHeading";
 import List from "@/components/List";
-import Footer from "@/components/Footer";
 
 
-export default async function ProtectedPage() {
+export default async function Deals() {
   const supabase = createClient();
 
   const {
@@ -35,11 +34,8 @@ export default async function ProtectedPage() {
       
       <div>
         <br/>
-        <AuthHero/>
-        <br/><br/><br/><br/>
-        <TableHeading/>
-        <Table />
-        <Footer/>
+        
+        <List/>
       </div>
       </div>
     </div>
