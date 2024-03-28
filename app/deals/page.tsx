@@ -35,7 +35,7 @@ export default async function Deals() {
       <div>
         <br/>
         
-        <List/>
+        <Table/>
       </div>
       </div>
     </div>
