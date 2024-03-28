@@ -33,7 +33,7 @@ export default async function Page() {
 
     // Render fetched data
     return (
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-1 gap-4">
         {directoryData.map((entry) => (
           <div key={entry.id} className="p-4 border border-gray-200 rounded-lg">
             <div className="flex items-center mb-2">
@@ -50,7 +50,7 @@ export default async function Page() {
                 <p className='text-white'>Founder / Co-Founders</p>
                 <p className='text-white'>{entry.name_of_owner}</p>
                 <br/>
-                <a href={entry.website} className='text-white'><button className='bg-green-400 rounded-md py-2 px-4'> Website</button></a>
+                <a href={entry.website} className='text-green-400 hover:text-green-200'>Visit Website</a>
               </div>
             </div>
             {/* Add additional details here if needed */}
