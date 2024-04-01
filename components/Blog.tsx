@@ -11,6 +11,7 @@ const Blog = () => {
       </div>
       <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
         <article className="flex max-w-xl flex-col items-start justify-between">
+        <img src="https://media.istockphoto.com/id/1399700759/photo/the-dms-system-manages-online-documents-efficiently.jpg?s=612x612&w=0&k=20&c=jZIAXTrFTrwUpNI3dfG8UdQ-sHehCZDkTt89V0fV1Zc=" className='mb-4 mx-auto max-h-full max-w-full' alt="" />
           <div className="flex items-center gap-x-4 text-xs">
             <time dateTime="2020-03-16" className="text-gray-500">Mar 16, 2024</time>
             <h1 className="relative z-10 rounded-full bg-green-400 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Tech</h1>
@@ -39,6 +40,7 @@ const Blog = () => {
           </div>
         </article>
         <article className="flex max-w-xl flex-col items-start justify-between">
+        <img src="https://media.istockphoto.com/id/1399944678/photo/multiple-database-is-placed-on-relational-database-tables-with-server-room-and-datacenter.jpg?s=612x612&w=0&k=20&c=SBaXkPg5hWPX2K5BkTyH8lhX82Get_MIWDpeTZeUnOU=" className='mb-4 max-h-full max-w-full' alt="" />
           <div className="flex items-center gap-x-4 text-xs">
             <time dateTime="2020-03-16" className="text-gray-500">Mar 28, 2024</time>
             <h1 className="relative z-10 rounded-full bg-green-400 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Data Analytics</h1>
@@ -66,6 +68,7 @@ const Blog = () => {
           </div>
         </article>
         <article className="flex max-w-xl flex-col items-start justify-between">
+        <img src="https://www.findlight.net/salesacademy/wp-content/uploads/2023/05/AM5063ef_06kult9dicap.jpg" className='mb-4 max-h-full max-w-full' alt=""/>
           <div className="flex items-center gap-x-4 text-xs">
             <time dateTime="2020-03-16" className="text-gray-500">Mar 28, 2024</time>
             <h1 className="relative z-10 rounded-full bg-green-400 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</h1>

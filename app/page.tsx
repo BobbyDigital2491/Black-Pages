@@ -14,6 +14,7 @@ import Parnterships from "@/components/Parnterships";
 import Table from "@/components/Table";
 import Blog from "@/components/Blog";
 import Footer from "@/components/Footer";
+import Slider from "@/components/Slider";
 
 export default async function Index() {
   const canInitSupabaseClient = () => {
@@ -48,6 +49,7 @@ export default async function Index() {
         <Categories/>
         <br/>
         <Blog/>
+        <Slider/>
         <Trial/>
         <Footer/>
       </div>

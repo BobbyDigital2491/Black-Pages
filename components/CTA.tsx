@@ -5,8 +5,11 @@ const CTA = () => {
     <section className="bg-black dark:bg-black">
     <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <div className="max-w-screen-md">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Let&nbsp;s find more that brings us together.</h2>
-            <p className="mb-8 font-light text-gray-500 sm:text-xl dark:text-gray-400">Flowbite helps you connect with friends, family and communities of people who share your interests. Connecting with your friends and family as well as discovering new ones is easy with features like Groups, Watch and Marketplace.</p>
+            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white dark:text-white">Let&nbsp;s find more that brings us together.</h2>
+            <p className="mb-8 font-light text-gray-500 sm:text-xl dark:text-white">
+                The Black Pages helps you connect with businesses, busineses owners and people who 
+                share your interests. The Black Pages offers a one of a kind directory to generate 
+                leads, find employers or employees, or just find local businesses in your area.</p>
             <div className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
                 <a href="#" className="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-white rounded-lg hover:bg-primary-800 focus:ring-4 focus:ring-white-300 dark:focus:ring-white">
                     Get started
