@@ -6,7 +6,7 @@ const CTA = () => {
     <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <div className="max-w-screen-md">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white dark:text-white">Let&nbsp;s find more that brings us together.</h2>
-            <p className="mb-8 font-light text-gray-500 sm:text-xl dark:text-white">
+            <p className="mb-8 font-light text-white sm:text-xl dark:text-white">
                 The Black Pages helps you connect with businesses, busineses owners and people who 
                 share your interests. The Black Pages offers a one of a kind directory to generate 
                 leads, find employers or employees, or just find local businesses in your area.</p>
