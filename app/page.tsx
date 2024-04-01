@@ -49,7 +49,7 @@ export default async function Index() {
         <Categories/>
         <br/>
         <Blog/>
-        <Slider/>
+        
         <Trial/>
         <Footer/>
       </div>
