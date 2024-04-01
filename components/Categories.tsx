@@ -19,7 +19,7 @@ const Categories = () => {
         </div>
         <div className="absolute inset-0 flex items-center justify-center p-4">
           <div
-            className="rounded-3xl bg-white bg-opacity-95 px-4 py-3 text-sm font-semibold uppercase tracking-wide transition ease-out group-hover:bg-green-600 group-hover:text-white dark:border-gray-800 dark:bg-green-400"
+            className="rounded-3xl bg-green-400 bg-opacity-95 px-4 py-3 text-sm font-semibold uppercase tracking-wide transition ease-out group-hover:bg-green-600 group-hover:text-white dark:border-gray-800 dark:bg-green-400"
           >
             Event Planning
           </div>
@@ -39,7 +39,7 @@ const Categories = () => {
         ></div>
         <div className="absolute inset-0 flex items-center justify-center p-4">
           <div
-            className="rounded-3xl bg-white bg-opacity-95 px-4 py-3 text-sm font-semibold uppercase tracking-wide transition ease-out group-hover:bg-green-600 group-hover:text-white dark:border-gray-800 dark:bg-green-400"
+            className="rounded-3xl bg-green-400 bg-opacity-95 px-4 py-3 text-sm font-semibold uppercase tracking-wide transition ease-out group-hover:bg-green-600 group-hover:text-white dark:border-gray-800 dark:bg-green-400"
           >
             Software Devlopment
           </div>
@@ -59,7 +59,7 @@ const Categories = () => {
         ></div>
         <div className="absolute inset-0 flex items-center justify-center p-4">
           <div
-            className="rounded-3xl bg-white bg-opacity-95 px-4 py-3 text-sm font-semibold uppercase tracking-wide transition ease-out  group-hover:bg-green-600 group-hover:text-white dark:border-gray-800 dark:bg-green-400"
+            className="rounded-3xl bg-green-400 bg-opacity-95 px-4 py-3 text-sm font-semibold uppercase tracking-wide transition ease-out  group-hover:bg-green-600 group-hover:text-white dark:border-gray-800 dark:bg-green-400"
           >
             Clothes
           </div>
@@ -79,7 +79,7 @@ const Categories = () => {
         ></div>
         <div className="absolute inset-0 flex items-center justify-center p-4">
           <div
-            className="rounded-3xl bg-white bg-opacity-95 px-4 py-3 text-sm font-semibold uppercase tracking-wide transition ease-out  group-hover:bg-green-600 group-hover:text-white dark:border-gray-800 dark:bg-green-400"
+            className="rounded-3xl bg-green-400 bg-opacity-95 px-4 py-3 text-sm font-semibold uppercase tracking-wide transition ease-out  group-hover:bg-green-600 group-hover:text-white dark:border-gray-800 dark:bg-green-400"
           >
             Interior Decoration
           </div>
@@ -99,7 +99,7 @@ const Categories = () => {
         ></div>
         <div className="absolute inset-0 flex items-center justify-center p-4">
           <div
-            className="rounded-3xl bg-white bg-opacity-95 px-4 py-3 text-sm font-semibold uppercase tracking-wide transition ease-out  group-hover:bg-green-600 group-hover:text-white dark:border-gray-800 dark:bg-green-400"
+            className="rounded-3xl bg-green-400 bg-opacity-95 px-4 py-3 text-sm font-semibold uppercase tracking-wide transition ease-out  group-hover:bg-green-600 group-hover:text-white dark:border-gray-800 dark:bg-green-400"
           >
             Landscaping
           </div>
@@ -119,7 +119,7 @@ const Categories = () => {
         ></div>
         <div className="absolute inset-0 flex items-center justify-center p-4">
           <div
-            className="rounded-3xl bg-white bg-opacity-95 px-4 py-3 text-sm font-semibold uppercase tracking-wide transition ease-out  group-hover:bg-green-600 group-hover:text-white dark:border-gray-800 dark:bg-green-400"
+            className="rounded-3xl bg-green-400 bg-opacity-95 px-4 py-3 text-sm font-semibold uppercase tracking-wide transition ease-out  group-hover:bg-green-600 group-hover:text-white dark:border-gray-800 dark:bg-green-400"
           >
             Security
           </div>
